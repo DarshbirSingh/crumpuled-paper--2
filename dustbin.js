@@ -15,5 +15,6 @@ class Dustbin {
     image(this.image,805 ,500 ,250 , 300);
     rect(pos.x,pos.y,this.width,this.height)
     pop()
+       //hi
     }
 }
