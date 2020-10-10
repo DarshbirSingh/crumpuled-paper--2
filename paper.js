@@ -14,7 +14,7 @@ class Paper {
     rectMode(CENTER)
     strokeWeight(3)
     imageMode(CENTER)
-    image(this.image,150,600,70,70);
+    image(this.image,0,0,70,70);
     pop()
     }
 }
