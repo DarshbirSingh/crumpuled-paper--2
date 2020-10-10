@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -20,9 +19,13 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	dustbin1=new Dustbin
+	dustbin1=new Dustbin(805,650,250,10)
+	dustbin3=new Dustbin(900,500,5,250)
+	dustbin2=new Dustbin(695,500,5,250)
+	
+	dustbin=new Dustbin
 
-	paper=new Paper(500,300)
+	paper=new Paper(150,600)
 
 	ground=new Ground(500,650,1000,10)
 
@@ -33,10 +36,14 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background("red");
-  ground.display();
+  background("white");
+  dustbin2.display();
   dustbin1.display();
+  dustbin3.display();
   paper.display();
+  ground.display();
+  dustbin.display();
+
 
   drawSprites();
  
