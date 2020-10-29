@@ -3,7 +3,7 @@ class Dustbin {
     var options = { isStatic:true} 
     this.body = Bodies.rectangle(x, y, width, height, options); 
     this.width = width; 
-    this.image=loadImage("Images/dustbingreen.png")
+    this.image=loadImage("dustbingreen.png")
     this.height = height;
     World.add(world, this.body); }
     display(){
